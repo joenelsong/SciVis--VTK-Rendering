@@ -1,0 +1,55 @@
+before you use source update it and vtkarrowsource.
+
+3 actors for second renderer.
+
+create 3 planes x y and z planes   vtkPlane
+setoriginal 000
+setnormal 100
+setoriginal 000
+setnormal 010
+setoriginal 000
+setnormal 001
+
+
+cutter
+
+
+setcutterfunction(planex) for each x y and z
+3dglyph
+
+seeds( 3d values listed in slides.)
+setseedsomething(19), // seedintegrationstep() ?
+hedgehog
+
+Notes:
+new piazza post about update() weirdness.
+// Cutter module useful...
+
+
+
+// Slicer
+
+
+- vtkLineSource
+
+
+
+// hedgehog: use Glyph3D vtk module not hedgehog.
+Steps:
+mask first
+then Glyph
+
+Set glyph input data to be masks output
+
+- Set ratio to be like 100
+-- input to maskpoints is data.
+
+
+stream tracer .. propogation, set intergration steps
+
+// streamlines
+19 different seeds
+use line source.
+
+
+
